@@ -1,0 +1,169 @@
+.intro-main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 95px;
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+
+.container .first {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: center;
+}
+
+.container .first h3 {
+  font-size: 44px;
+  font-weight: bold;
+  color: var(--main-color);
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+
+.container .first h3 span {
+  color: var(--primary-color);
+}
+
+.container .first p {
+  text-align: center;
+  font-size: 24px;
+  line-height: 35px;
+  font-weight: 300;
+}
+
+.container .second {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .second .container {
+  width: 490px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.container .second .container .lets-talk {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.container .second .container .lets-talk input {
+  border-radius: 8px;
+  padding: 20px 35px;
+  width: 335px;
+  font-size: 18px;
+  border: 1px solid var(--border-color);
+}
+
+.container .second p {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.container .second p span {
+  text-decoration: underline;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .container .first h3 {
+    font-size: 36px;
+  }
+
+  .container .first p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .container .second .container {
+    width: 100%;
+    padding: 0 32px;
+  }
+
+  .container .second .container .lets-talk input {
+    width: 100%;
+  }
+}
+
+/* Small Tablets and Large Phones */
+@media (max-width: 768px) {
+  :root {
+    --padding: 0 16px;
+  }
+
+  .intro-main-container {
+    padding-top: 60px;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+  }
+
+  .container .first h3 {
+    font-size: 28px;
+  }
+
+  .container .first p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .container .second .container {
+    width: 100%;
+  }
+
+  .container .second .container .lets-talk input {
+    padding: 16px 20px;
+    font-size: 14px;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  .intro-main-container {
+    padding-top: 40px;
+  }
+
+  .container .first h3 {
+    font-size: 30px;
+  }
+
+  .container .first p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+
+  .container .second p {
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  .container .second .container {
+    width: 100%;
+  }
+
+  .container .second .container .lets-talk {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .container .second .container .lets-talk input {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 18px;
+  }
+}

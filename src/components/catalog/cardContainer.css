@@ -1,0 +1,111 @@
+.card-container {
+  width: 100%;
+  margin-top: 55px;
+  display: grid;
+  gap: 24px;
+  margin-bottom: 100px;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+}
+
+.card-container .card {
+  height: 500px;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card img.main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.card img.shadow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.card .button .arrow {
+  height: 20px;
+  width: 20px;
+  background-color: var(--primary-color);
+}
+
+.card .button .arrow img {
+  height: 7.5px;
+  width: 4.5px;
+}
+
+.card .content {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  padding: 15px 26px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.content .button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.content > p {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.content .button p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .content > p {
+    font-size: 32px;
+  }
+  .content .button p {
+    font-size: 28px;
+  }
+}
+
+/* Small Tablets and Large Phones */
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  .content > p {
+    font-size: 28px;
+  }
+  .content .button p {
+    font-size: 24px;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+  .content > p {
+    font-size: 24px;
+  }
+  .content .button p {
+    font-size: 20px;
+  }
+}
