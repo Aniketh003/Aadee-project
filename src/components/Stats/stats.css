@@ -85,6 +85,10 @@
     font-size: 22px;
   }
 
+.stats hr{
+display: none;
+}
+
   .stats h1 {
     font-size: 46px;
   }
